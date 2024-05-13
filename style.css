@@ -1,0 +1,107 @@
+
+.Zig-Zag-boxes div:nth-child(odd){
+    background-color: yellow;
+    margin-bottom: 40px;
+   
+}
+
+.Zig-Zag-boxes div{
+    border: 4px solid black;
+    background-color: green;
+    width: 100px;
+    height:100px;
+    margin: 10px;
+    display: inline-block;
+   
+}
+
+.hide-even-boxes div{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    background-color: red;
+    border: 4px solid black;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+   display: inline-block;
+  
+}
+.hide-even-boxes div:nth-child(even){
+    display: none;
+}
+.example3 table{
+    border-top: 3px solid black;
+}
+
+.boxes td{
+    border: 2px solid black;
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 0px 10px 10px 10px;
+    
+}
+
+.blue-box1 td:nth-child(-4n+4),
+.blue-box1 td:nth-child(-5n+5),
+.blue-box1 td:nth-child(-6n+6)
+{
+    background-color: blue;
+  
+}
+
+.blue-box2 td:nth-last-child(-n+3){
+    background-color: blue;
+}
+.blue-box2 td:nth-child(-n+3){
+    background-color: blue;
+}
+.blue-box3 td:nth-child(-4n+4),
+.blue-box3 td:nth-child(-5n+5),
+.blue-box3 td:nth-child(-6n+6)
+{
+    background-color: blue;
+  
+}
+
+.example4 div{
+    border: 2px solid black;
+    background-color: rgb(200, 196, 196);
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/*  Select Only the Fifth Element
+.example4 div:nth-child(5){
+    background-color: orange;
+}*/
+
+/* Select All But The First Five
+.example4 div:nth-child(n+5){
+    background-color: orange;
+}*/
+
+/* Select Only The First Five
+.example4 div:nth-child(-n+5){
+    background-color: orange;
+}*/
+
+/* Select Every Fourth, Starting At The First
+.example4 div:nth-child(4n+4){
+    background-color: orange;
+}*/
+
+/* Select The Last 5 elements
+.example4 div:nth-child(n+6){
+    background-color: orange;
+}*/
+
+/*  Select the Second to Last Element
+.example4 div:nth-child(n+2){
+    background-color: orange;
+}*/
+
